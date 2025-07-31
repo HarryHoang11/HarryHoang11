@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Fahasa.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png" alt="Fahasa.com">
+            </div>
+            <div class="search-container">
+                <div class="category-dropdown">
+                    <span>📚</span>
+                </div>
+                <input type="text" class="search-input" placeholder="Sách giáo khoa bổ">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="header-actions">
+                <div class="notification">🔔</div>
+                <div class="account">Tài khoản</div>
+                <div class="cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">1</span>
+                    <span>Giỏ Hàng</span>
+                </div>
+                <div class="language">
+                    <span class="flag">🇻🇳</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Cart Section -->
+            <div class="cart-section">
+                <h2 class="cart-title">GIỎ HÀNG (1 sản phẩm)</h2>
+                
+                <div class="cart-header">
+                    <div class="select-all">
+                        <input type="checkbox" id="select-all" checked>
+                        <label for="select-all">Chọn tất cả (1 sản phẩm)</label>
+                    </div>
+                    <div class="cart-headers">
+                        <span>Số lượng</span>
+                        <span>Thành tiền</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-checkbox">
+                        <input type="checkbox" id="item-1" checked>
+                    </div>
+                    <div class="item-image">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/g/i/giao-trinh-c---va-lap-trinh-huong-doi-tuong-tai-ban-2023.jpg" alt="Giáo Trình C++ Và Lập Trình Hướng Đối Tượng">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Giáo Trình C++ Và Lập Trình Hướng Đối Tượng (Tái Bản 2023)</h3>
+                        <div class="item-price">
+                            <span class="current-price">156.000 đ</span>
+                            <span class="original-price">195.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus">−</button>
+                        <input type="number" value="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="total-price">156.000 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Promotion -->
+                <div class="promotion-card">
+                    <div class="promo-icon">🎁</div>
+                    <div class="promo-content">
+                        <h3>KHUYẾN MÃI</h3>
+                        <a href="#" class="promo-link">Xem thêm ></a>
+                    </div>
+                </div>
+
+                <div class="discount-offer">
+                    <div class="discount-icon">⭕</div>
+                    <div class="discount-content">
+                        <h4>Mã Giảm 20K - Toàn Sàn</h4>
+                        <p>Đơn hàng từ 249k - Không bao gồm giá trị của các sản phẩm sau Manga, Ngoại...</p>
+                        <div class="discount-expiry">HSD: 31/07/2025</div>
+                        <div class="discount-price">Mua thêm 93.000 đ</div>
+                        <button class="use-discount-btn">Mua thêm</button>
+                    </div>
+                </div>
+
+                <div class="more-offers">
+                    <span>2 khuyến mãi đủ điều kiện</span>
+                    <span class="arrow">></span>
+                </div>
+
+                <div class="delivery-info">
+                    <span>Có thể áp dụng đồng thời nhiều...</span>
+                    <span class="info-icon">ℹ️</span>
+                </div>
+
+                <!-- Gift Section -->
+                <div class="gift-section">
+                    <div class="gift-icon">🎁</div>
+                    <span>Nhận quà (0/1)</span>
+                    <div class="gift-select">
+                        <span>Chọn quà</span>
+                        <span class="gift-count">1</span>
+                        <span class="arrow">></span>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Thành tiền</span>
+                        <span>156.000 đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Phí vận chuyển (Giao hàng tiêu chuẩn)</span>
+                        <span>20.000 đ</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Tổng Số Tiền (gồm VAT)</span>
+                        <span class="total-amount">176.000 đ</span>
+                    </div>
+                    <button class="checkout-btn">THANH TOÁN</button>
+                    <div class="payment-note">(Chưa bao gồm khuyến mãi áp dụng cho từng sản phẩm)</div>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
